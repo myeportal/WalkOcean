@@ -167,13 +167,13 @@ export default function HomePage() {
         </section>
       </section>
 
-      <section className="section-block section-block-wide" id="families">
-        <div className="section-intro center section-intro-wide">
+      <section className="section-block" id="families">
+        <div className="section-intro center">
           <span className="section-kicker">How it works</span>
           <h2>Two paths, one calmer launch experience.</h2>
         </div>
 
-        <div className="journey-grid journey-grid-balanced">
+        <div className="journey-grid">
           {journeyCards.map((card) => (
             <article className="journey-card" key={card.title}>
               <span className="card-kicker">{card.eyebrow}</span>
@@ -189,40 +189,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-split muted-block section-block-wide">
-        <div className="section-intro center section-intro-wide">
+      <section className="section-split muted-block">
+        <div className="section-copy">
           <span className="section-kicker">Why families lean in</span>
           <h2>A breath of the coast, every other day — framed more carefully.</h2>
+          <p>
+            Walkocean is built around the believable benefits families already value: gentle movement, time outdoors, companionship, and a routine that is easier to keep. The promise is not miracle health claims. It is a more encouraging, more dependable way to get outside.
+          </p>
         </div>
 
-        <div className="split-layout split-layout-wide">
-          <div className="section-copy section-copy-balanced">
-            <p>
-              Walkocean is built around the believable benefits families already value: gentle movement, time outdoors, companionship, and a routine that is easier to keep. The promise is not miracle health claims. It is a more encouraging, more dependable way to get outside.
-            </p>
-          </div>
-
-          <div className="benefit-stack">
-            {benefitBullets.map((item) => (
-              <article key={item.title} className="benefit-card">
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
+        <div className="benefit-stack">
+          {benefitBullets.map((item) => (
+            <article key={item.title} className="benefit-card">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
-      <section className="section-block section-block-wide" id="how">
-        <div className="section-head-row section-head-row-centered">
-          <div className="section-intro center section-intro-wide">
+      <section className="section-block" id="how">
+        <div className="section-head-row">
+          <div>
             <span className="section-kicker">The launch flow</span>
             <h2>Simple steps, higher-trust execution.</h2>
           </div>
-          <a href="#interest" className="inline-link inline-link-centered">Join waitlist →</a>
+          <a href="#interest" className="inline-link">Join waitlist →</a>
         </div>
 
-        <div className="steps-grid steps-grid-wide">
+        <div className="steps-grid">
           {howItWorks.map((item) => (
             <article className="step-card" key={item.step}>
               <span className="step-badge">{item.step}</span>
@@ -233,16 +228,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-block soft-panel section-block-wide">
-        <div className="section-head-row section-head-row-centered">
-          <div className="section-intro center section-intro-wide">
+      <section className="section-block soft-panel">
+        <div className="section-head-row">
+          <div>
             <span className="section-kicker">Featured launch options</span>
             <h2>Structured more like a polished marketplace, delivered more carefully than one.</h2>
           </div>
-          <span className="inline-note inline-note-centered">Safer claims. Stronger framing.</span>
+          <span className="inline-note">Safer claims. Stronger framing.</span>
         </div>
 
-        <div className="profile-grid profile-grid-wide">
+        <div className="profile-grid">
           {featuredOptions.map((item) => (
             <article key={item.name} className="profile-card">
               <div className="profile-visual">
@@ -266,13 +261,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-block faq-block section-block-wide" id="faq">
-        <div className="section-intro center section-intro-wide">
+      <section className="section-block faq-block" id="faq">
+        <div className="section-intro left">
           <span className="section-kicker">FAQ</span>
           <h2>Answers for families evaluating a new service.</h2>
         </div>
 
-        <div className="faq-grid faq-grid-wide">
+        <div className="faq-grid">
           {faqItems.map((item) => (
             <article key={item.q} className="faq-card">
               <h3>{item.q}</h3>

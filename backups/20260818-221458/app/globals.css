@@ -37,9 +37,9 @@ a {
 }
 
 .site-shell {
-  width: min(1320px, calc(100% - 32px));
+  width: min(1180px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 18px 0 56px;
+  padding: 18px 0 40px;
 }
 
 .top-fold,
@@ -382,14 +382,8 @@ a {
 .cta-panel,
 .site-footer {
   border-radius: 28px;
-  padding: 36px;
-  margin-top: 24px;
-}
-
-.section-block-wide,
-.section-split.section-block-wide,
-.faq-block.section-block-wide {
-  padding-inline: clamp(28px, 4vw, 52px);
+  padding: 28px;
+  margin-top: 22px;
 }
 
 .top-fold + .section-block {
@@ -398,7 +392,6 @@ a {
 
 .section-intro.center {
   text-align: center;
-  margin-inline: auto;
 }
 
 .section-intro.left,
@@ -407,27 +400,12 @@ a {
   max-width: 700px;
 }
 
-.section-intro-wide {
-  max-width: 920px;
-  margin-bottom: 26px;
-}
-
-.section-intro-wide h2 {
-  max-width: 18ch;
-  margin-inline: auto;
-  text-wrap: balance;
-}
-
-.section-copy-balanced {
-  max-width: 640px;
-}
-
 .section-intro h2,
 .section-copy h2,
 .section-head-row h2,
 .cta-panel h2 {
-  font-size: clamp(2.2rem, 4.1vw, 3.7rem);
-  max-width: 15ch;
+  font-size: clamp(2rem, 4.6vw, 3.3rem);
+  max-width: 12ch;
 }
 
 .section-kicker {
@@ -442,8 +420,7 @@ a {
 .benefit-stack,
 .steps-grid,
 .profile-grid,
-.faq-grid,
-.split-layout {
+.faq-grid {
   display: grid;
   gap: 18px;
 }
@@ -455,13 +432,6 @@ a {
 
 .journey-grid {
   margin-top: 22px;
-}
-
-.journey-grid-balanced {
-  max-width: 1160px;
-  margin-inline: auto;
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
-  gap: 22px;
 }
 
 .journey-card,
@@ -504,14 +474,9 @@ a {
 
 .section-split {
   display: grid;
-  gap: 24px;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 22px;
   background: linear-gradient(180deg, #f9fcfe, #f0f6fa);
-}
-
-.split-layout-wide {
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  align-items: start;
-  gap: 24px;
 }
 
 .muted-block {
@@ -520,7 +485,7 @@ a {
 
 .benefit-stack {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-self: start;
+  align-self: end;
 }
 
 .section-head-row,
@@ -532,32 +497,14 @@ a {
   gap: 18px;
 }
 
-.section-head-row-centered {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  text-align: center;
-}
-
 .inline-link {
   font-weight: 700;
   white-space: nowrap;
 }
 
-.inline-link-centered,
-.inline-note-centered {
-  margin-inline: auto;
-}
-
 .steps-grid {
   margin-top: 22px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.steps-grid-wide {
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
-  gap: 20px;
 }
 
 .step-card {
@@ -579,11 +526,6 @@ a {
 .profile-grid {
   margin-top: 22px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.profile-grid-wide {
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
-  gap: 20px;
 }
 
 .profile-card {
@@ -636,11 +578,6 @@ a {
 .faq-grid {
   margin-top: 22px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.faq-grid-wide {
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 20px;
 }
 
 .cta-panel {
@@ -697,16 +634,11 @@ a {
 
   .stats-bar,
   .journey-grid,
-  .journey-grid-balanced,
   .benefit-stack,
   .steps-grid,
-  .steps-grid-wide,
   .profile-grid,
-  .profile-grid-wide,
   .faq-grid,
-  .faq-grid-wide,
-  .section-split,
-  .split-layout {
+  .section-split {
     grid-template-columns: 1fr;
   }
 
@@ -736,8 +668,7 @@ a {
   .section-intro h2,
   .section-copy h2,
   .section-head-row h2,
-  .cta-panel h2,
-  .section-intro-wide h2 {
+  .cta-panel h2 {
     max-width: none;
   }
 
@@ -752,13 +683,6 @@ a {
   .hero-actions .btn {
     min-width: 0;
     flex-basis: auto;
-  }
-
-  .section-block,
-  .section-split,
-  .cta-panel,
-  .site-footer {
-    padding: 28px;
   }
 }
 
@@ -816,15 +740,5 @@ a {
   .site-footer {
     padding: 22px;
     border-radius: 22px;
-  }
-
-  .section-block-wide,
-  .section-split.section-block-wide,
-  .faq-block.section-block-wide {
-    padding-inline: 22px;
-  }
-
-  .section-intro-wide {
-    margin-bottom: 22px;
   }
 }
