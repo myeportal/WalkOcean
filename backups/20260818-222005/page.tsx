@@ -214,8 +214,8 @@ export default function HomePage() {
       </section>
 
       <section className="section-block section-block-wide" id="how">
-        <div className="section-head-row section-head-row-centered section-head-row-roomy">
-          <div className="section-intro center section-intro-wide section-intro-roomy">
+        <div className="section-head-row section-head-row-centered">
+          <div className="section-intro center section-intro-wide">
             <span className="section-kicker">The launch flow</span>
             <h2>Simple steps, higher-trust execution.</h2>
           </div>
@@ -234,12 +234,12 @@ export default function HomePage() {
       </section>
 
       <section className="section-block soft-panel section-block-wide">
-        <div className="section-head-row section-head-row-spread">
-          <div className="section-intro center section-intro-wide section-intro-roomy">
+        <div className="section-head-row section-head-row-centered">
+          <div className="section-intro center section-intro-wide">
             <span className="section-kicker">Featured launch options</span>
             <h2>Structured more like a polished marketplace, delivered more carefully than one.</h2>
           </div>
-          <span className="inline-note inline-note-side">Safer claims. Stronger framing.</span>
+          <span className="inline-note inline-note-centered">Safer claims. Stronger framing.</span>
         </div>
 
         <div className="profile-grid profile-grid-wide">
@@ -267,12 +267,9 @@ export default function HomePage() {
       </section>
 
       <section className="section-block faq-block section-block-wide" id="faq">
-        <div className="section-intro center section-intro-wide section-intro-roomy">
+        <div className="section-intro center section-intro-wide">
           <span className="section-kicker">FAQ</span>
           <h2>Answers for families evaluating a new service.</h2>
-          <p className="section-lead section-lead-roomy">
-            Clear expectations, careful boundaries, and founder-led communication are what make the early launch feel more dependable from the first conversation.
-          </p>
         </div>
 
         <div className="faq-grid faq-grid-wide">
@@ -286,18 +283,13 @@ export default function HomePage() {
       </section>
 
       <section className="cta-panel" id="interest">
-        <div className="cta-panel-shell">
-          <div className="cta-panel-copy">
-            <span className="section-kicker section-kicker-inverse">Early access</span>
-            <h2>Ready for a more thoughtful first walk?</h2>
-            <p>
-              Join the early interest list for launch pricing, founder-led availability, and the first intake openings in Whatcom County.
-            </p>
-          </div>
-          <div className="hero-actions centered cta-actions">
-            <a href="mailto:hello@walkocean.com?subject=Walkocean%20Interest" className="btn btn-primary">Book a walk</a>
-            <a href="mailto:hello@walkocean.com?subject=Walkocean%20Caregiver%20Interest" className="btn btn-secondary">Become a companion</a>
-          </div>
+        <h2>Ready for a more thoughtful first walk?</h2>
+        <p>
+          Join the early interest list for launch pricing, founder-led availability, and the first intake openings in Whatcom County.
+        </p>
+        <div className="hero-actions centered">
+          <a href="mailto:hello@walkocean.com?subject=Walkocean%20Interest" className="btn btn-primary">Book a walk</a>
+          <a href="mailto:hello@walkocean.com?subject=Walkocean%20Caregiver%20Interest" className="btn btn-secondary">Become a companion</a>
         </div>
       </section>
 
