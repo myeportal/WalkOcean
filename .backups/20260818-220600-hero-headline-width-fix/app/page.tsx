@@ -111,59 +111,57 @@ const faqItems = [
 export default function HomePage() {
   return (
     <main className="site-shell">
-      <section className="top-fold" id="top">
-        <header className="topbar">
-          <a href="#top" className="brand-mark" aria-label="Walkocean home">
-            <span className="brand-dot" />
-            <span>Walkocean</span>
-          </a>
+      <header className="topbar">
+        <a href="#top" className="brand-mark" aria-label="Walkocean home">
+          <span className="brand-dot" />
+          <span>Walkocean</span>
+        </a>
 
-          <nav className="topnav" aria-label="Primary">
-            <a href="#how">How it works</a>
-            <a href="#families">For families</a>
-            <a href="#faq">FAQ</a>
-          </nav>
+        <nav className="topnav" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#families">For families</a>
+          <a href="#faq">FAQ</a>
+        </nav>
 
-          <a href="#interest" className="nav-cta">Book interest</a>
-        </header>
+        <a href="#interest" className="nav-cta">Book interest</a>
+      </header>
 
-        <section className="hero-shell">
-          <div className="hero">
-            <div className="hero-bubble hero-bubble-left" />
-            <div className="hero-bubble hero-bubble-center" />
-            <div className="hero-bubble hero-bubble-right" />
-            <div className="hero-overlay" />
+      <section className="hero-shell" id="top">
+        <div className="hero">
+          <div className="hero-bubble hero-bubble-left" />
+          <div className="hero-bubble hero-bubble-center" />
+          <div className="hero-bubble hero-bubble-right" />
+          <div className="hero-overlay" />
 
-            <div className="hero-copy">
-              <div className="pill-label">walkocean.com</div>
-              <h1 className="hero-headline">
-                Ocean-air walks, thoughtfully matched for older adults who deserve a steadier routine outdoors.
-              </h1>
-              <p className="hero-text">
-                Founder-led Walkocean is launching in Whatcom County with calm, private walks built for trust, consistency, and family confidence — without pretending to be clinical care.
-              </p>
+          <div className="hero-copy">
+            <div className="pill-label">walkocean.com</div>
+            <h1 className="hero-headline">
+              Ocean-air walks, thoughtfully matched for older adults who deserve a steadier routine outdoors.
+            </h1>
+            <p className="hero-text">
+              Founder-led Walkocean is launching in Whatcom County with calm, private walks built for trust, consistency, and family confidence — without pretending to be clinical care.
+            </p>
 
-              <div className="hero-actions">
-                <a href="#interest" className="btn btn-primary">Find a companion</a>
-                <a href="#how" className="btn btn-secondary">Become an early family</a>
-              </div>
+            <div className="hero-actions">
+              <a href="#interest" className="btn btn-primary">Find a companion</a>
+              <a href="#how" className="btn btn-secondary">Become an early family</a>
+            </div>
 
-              <div className="hero-chips" aria-label="Highlights">
-                {heroChips.map((chip) => (
-                  <span key={chip}>{chip}</span>
-                ))}
-              </div>
+            <div className="hero-chips" aria-label="Highlights">
+              {heroChips.map((chip) => (
+                <span key={chip}>{chip}</span>
+              ))}
             </div>
           </div>
+        </div>
 
-          <section className="stats-bar" aria-label="Walkocean launch highlights">
-            {stats.map((item) => (
-              <article key={item.label} className="stat-item">
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </article>
-            ))}
-          </section>
+        <section className="stats-bar" aria-label="Walkocean launch highlights">
+          {stats.map((item) => (
+            <article key={item.label} className="stat-item">
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </article>
+          ))}
         </section>
       </section>
 

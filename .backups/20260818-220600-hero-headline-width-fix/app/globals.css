@@ -39,10 +39,10 @@ a {
 .site-shell {
   width: min(1180px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 18px 0 40px;
+  padding: 14px 0 40px;
 }
 
-.top-fold,
+.topbar,
 .section-block,
 .section-split,
 .cta-panel,
@@ -52,39 +52,16 @@ a {
   box-shadow: var(--shadow);
 }
 
-.top-fold {
-  position: relative;
-  margin-bottom: 30px;
-  padding: 14px;
-  border-radius: 34px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(241, 248, 252, 0.82)),
-    radial-gradient(circle at top, rgba(90, 180, 221, 0.14), transparent 42%);
-  overflow: hidden;
-}
-
-.top-fold::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 24%);
-  pointer-events: none;
-}
-
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
   padding: 14px 18px;
-  border-radius: 24px;
-  margin-bottom: 12px;
+  border-radius: 22px;
+  margin-bottom: 18px;
   position: sticky;
   top: 12px;
-  background: rgba(248, 252, 254, 0.72);
-  border: 1px solid rgba(28, 79, 112, 0.08);
-  box-shadow: 0 16px 32px rgba(21, 77, 110, 0.08);
   backdrop-filter: blur(18px);
   z-index: 20;
 }
@@ -120,7 +97,7 @@ a {
   justify-content: center;
   min-height: 46px;
   padding: 0 18px;
-  border-radius: 14px;
+  border-radius: 12px;
   font-weight: 700;
   transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
 }
@@ -140,13 +117,14 @@ a {
 
 .hero-shell {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .hero {
   position: relative;
-  min-height: 600px;
-  padding: 54px 52px 136px;
-  border-radius: 30px;
+  min-height: 592px;
+  padding: 40px 44px 116px;
+  border-radius: 36px;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -155,15 +133,6 @@ a {
     linear-gradient(180deg, rgba(17, 102, 146, 0.18) 0%, rgba(8, 56, 83, 0.68) 100%),
     url("https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
   box-shadow: var(--hero-shadow);
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  pointer-events: none;
 }
 
 .hero::before {
@@ -216,7 +185,7 @@ a {
 .hero-copy {
   position: relative;
   z-index: 1;
-  width: min(100%, 740px);
+  width: min(100%, 980px);
   color: white;
 }
 
@@ -242,7 +211,7 @@ a {
   padding: 0 13px;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   backdrop-filter: blur(10px);
 }
 
@@ -259,15 +228,14 @@ a {
 
 .hero h1 {
   color: white;
-  font-size: clamp(3.3rem, 6.4vw, 5.7rem);
-  line-height: 0.94;
-  max-width: 24ch;
+  font-size: clamp(3.1rem, 6vw, 5.2rem);
+  line-height: 0.95;
+  max-width: 14ch;
   text-wrap: balance;
 }
 
 .hero-headline {
-  width: 100%;
-  max-width: 24ch;
+  width: min(100%, 14ch);
 }
 
 .hero-text,
@@ -285,24 +253,17 @@ a {
 
 .hero-text {
   color: rgba(255, 255, 255, 0.88);
-  max-width: 48ch;
-  margin: 22px 0 0;
-  font-size: 1.05rem;
+  max-width: 58ch;
+  margin: 18px 0 0;
+  font-size: 1.03rem;
   line-height: 1.68;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 14px 16px;
-  width: min(100%, 620px);
-  margin: 34px 0 22px;
-}
-
-.hero-actions .btn {
-  min-width: 220px;
-  flex: 0 1 260px;
+  gap: 12px;
+  margin: 26px 0 16px;
 }
 
 .centered {
@@ -311,9 +272,9 @@ a {
 
 .btn-secondary {
   border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.12);
   color: white;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: none;
   backdrop-filter: blur(10px);
 }
 
@@ -343,19 +304,19 @@ a {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  width: min(92%, 1010px);
-  margin: -72px auto 0;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(28, 79, 112, 0.08);
-  border-radius: 24px;
+  width: min(94%, 1040px);
+  margin: -58px auto 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(28, 79, 112, 0.1);
+  border-radius: 28px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(17, 86, 126, 0.14);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(16px);
 }
 
 .stat-item {
-  padding: 26px 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 252, 0.92));
+  padding: 24px 22px;
+  background: rgba(255, 255, 255, 0.98);
   border-right: 1px solid var(--line);
 }
 
@@ -384,10 +345,6 @@ a {
   border-radius: 28px;
   padding: 28px;
   margin-top: 22px;
-}
-
-.top-fold + .section-block {
-  margin-top: 0;
 }
 
 .section-intro.center {
@@ -627,11 +584,6 @@ a {
     flex-direction: column;
   }
 
-  .top-fold {
-    padding: 12px;
-    border-radius: 30px;
-  }
-
   .stats-bar,
   .journey-grid,
   .benefit-stack,
@@ -645,7 +597,7 @@ a {
   .stats-bar {
     width: calc(100% - 24px);
     margin-top: -42px;
-    border-radius: 22px;
+    border-radius: 24px;
   }
 
   .stat-item {
@@ -659,8 +611,8 @@ a {
 
   .hero {
     min-height: 520px;
-    padding: 38px 30px 98px;
-    border-radius: 26px;
+    padding: 30px 26px 98px;
+    border-radius: 30px;
   }
 
   .hero-headline,
@@ -675,15 +627,6 @@ a {
   .hero-copy {
     width: min(100%, 780px);
   }
-
-  .hero-actions {
-    width: auto;
-  }
-
-  .hero-actions .btn {
-    min-width: 0;
-    flex-basis: auto;
-  }
 }
 
 @media (max-width: 720px) {
@@ -691,17 +634,9 @@ a {
     width: min(100% - 18px, 1120px);
   }
 
-  .top-fold {
-    padding: 10px;
-    border-radius: 26px;
-    margin-bottom: 24px;
-  }
-
   .topbar {
     padding: 14px;
     align-items: flex-start;
-    border-radius: 20px;
-    margin-bottom: 10px;
   }
 
   .topnav {
@@ -711,8 +646,8 @@ a {
 
   .hero {
     min-height: 476px;
-    padding: 28px 20px 84px;
-    border-radius: 22px;
+    padding: 24px 20px 84px;
+    border-radius: 26px;
   }
 
   .hero h1 {
@@ -721,17 +656,12 @@ a {
   }
 
   .hero-headline {
-    width: 100%;
-    max-width: 100%;
+    width: min(100%, 11.5ch);
   }
 
   .hero-text {
     font-size: 0.98rem;
-    max-width: 38ch;
-  }
-
-  .hero-actions {
-    gap: 12px;
+    max-width: 44ch;
   }
 
   .section-block,
