@@ -1,47 +1,86 @@
-const benefits = [
-  'Gentle outdoor movement with a trusted companion',
-  'Clear communication for families and loved ones',
-  'A local, human-first experience rooted in Whatcom County',
+const heroHighlights = [
+  'Founder-led launch with Kelly Kenney as your first Walkocean companion',
+  'Designed for older adults who want steady, encouraging outdoor time',
+  'Built for families who value visibility, consistency, and care in the details',
+]
+
+const proofPoints = [
+  { label: 'Launch region', value: 'Bellingham + Whatcom County' },
+  { label: 'Phase 1 model', value: 'Private founder-led companionship walks' },
+  { label: 'Booking focus', value: 'Simple intake, thoughtful matching, dependable follow-through' },
+]
+
+const audiences = [
+  {
+    title: 'For older adults',
+    text: 'Enjoy calm, local walks with a trusted companion who respects pace, preferences, and comfort from the very first outing.',
+  },
+  {
+    title: 'For adult children and families',
+    text: 'Give a loved one a premium-feeling routine that supports time outdoors and companionship without adding complexity to your week.',
+  },
+  {
+    title: 'For thoughtful referrals',
+    text: 'Offer a polished local option for people seeking companionship-centered walking support that is clearly separate from medical care.',
+  },
 ]
 
 const howItWorks = [
   {
-    title: 'Choose a walk',
-    text: 'Start with a 30- or 60-minute coastal companionship walk designed around pace, comfort, and confidence.',
+    step: '01',
+    title: 'Start with a short intake',
+    text: 'Share location, preferred walking pace, mobility considerations, and the details that help a first walk feel comfortable.',
   },
   {
-    title: 'Share preferences',
-    text: 'Add mobility notes, route comfort, and an emergency contact so every walk starts with the right context.',
+    step: '02',
+    title: 'Confirm the right fit',
+    text: 'Walkocean reviews timing, route comfort, and family context before confirming a founder-led walk in the local launch area.',
   },
   {
-    title: 'Walk with confidence',
-    text: 'Meet your trusted walker, get simple confirmations, and build a routine that supports movement and wellbeing.',
+    step: '03',
+    title: 'Build a dependable rhythm',
+    text: 'Begin with one walk, then grow into a weekly or twice-weekly routine if it feels like a strong fit for everyone involved.',
   },
 ]
 
-const trustPoints = [
-  'Founder-led launch with Kelly Kenney as the first walker',
-  'Safety-first positioning for older adults and families',
-  'Wellness and companionship messaging grounded in defensible claims',
-  'Built to expand from a local service into a trusted marketplace',
+const pricingTeasers = [
+  {
+    title: 'Introductory private walks',
+    text: 'Phase 1 pricing is being finalized now, with premium local positioning for 30- and 60-minute founder-led walks.',
+  },
+  {
+    title: 'Simple launch packages',
+    text: 'Expect straightforward single-walk and recurring options so families can test the experience before committing to a rhythm.',
+  },
+  {
+    title: 'Early access priority',
+    text: 'Interest list members will hear first when launch pricing, intake availability, and first-route windows open.',
+  },
+]
+
+const trustDetails = [
+  'Clear positioning: Walkocean is companionship and walking support, not medical treatment, therapy, or home health care.',
+  'Founder-led delivery creates a high-trust Phase 1 experience before expanding into a broader companion network.',
+  'Intake includes mobility notes, route preferences, and an emergency contact to support better planning.',
+  'Careful launch footprint keeps service quality local, personal, and easier to refine before scale.',
 ]
 
 const faqs = [
   {
-    q: 'Who is Walkocean for?',
-    a: 'Walkocean is for older adults who want support, companionship, and a reason to get outside — and for families who want a trusted local option for gentle activity.',
+    q: 'What exactly is Walkocean?',
+    a: 'Walkocean is a premium companionship walking service designed for older adults and the families helping them stay connected to outdoor routines.',
   },
   {
-    q: 'Where does Walkocean launch first?',
-    a: 'Phase 1 is focused on Bellingham and Whatcom County, Washington.',
+    q: 'Is Walkocean medical or clinical care?',
+    a: 'No. Walkocean is not medical care, physical therapy, or home health. It is a companionship-centered walking service with thoughtful safety planning.',
   },
   {
-    q: 'Is this medical care?',
-    a: 'No. Walkocean is a companionship and wellness service, not medical treatment or home health care.',
+    q: 'Where is Walkocean launching first?',
+    a: 'Phase 1 is focused on Bellingham and the wider Whatcom County area in Washington.',
   },
   {
-    q: 'How will payments work?',
-    a: 'Phase 1 is planned for USD checkout through PayPal, with a crypto payment option added in the product roadmap.',
+    q: 'When will pricing be available?',
+    a: 'Launch pricing will be announced with the first booking release. The current site is designed to build interest, trust, and early demand ahead of that opening.',
   },
 ]
 
@@ -50,94 +89,126 @@ export default function HomePage() {
     <main className="page-shell">
       <section className="hero">
         <div className="hero-copy">
-          <span className="eyebrow">Walkocean · Whatcom County launch</span>
-          <h1>Trusted coastal walking companionship for older adults.</h1>
+          <span className="eyebrow">Walkocean · Phase 1 coastal launch</span>
+          <h1>Premium walking companionship for older adults who deserve a trusted routine outdoors.</h1>
           <p className="lead">
-            Walkocean helps older adults and families book safe, supportive companionship walks near the water —
-            starting with Kelly Kenney in Bellingham and Whatcom County.
+            Walkocean begins in Whatcom County with founder-led walks designed to feel calm, personal, and dependable — giving older adults encouraging outdoor time and families more confidence in the plan.
           </p>
           <div className="cta-row">
-            <a href="#book" className="btn btn-primary">Book interest</a>
-            <a href="#how" className="btn btn-secondary">See how it works</a>
+            <a href="#interest" className="btn btn-primary">Join the interest list</a>
+            <a href="#pricing" className="btn btn-secondary">Preview Phase 1 pricing</a>
           </div>
           <ul className="benefit-list">
-            {benefits.map((item) => (
+            {heroHighlights.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
-        <div className="hero-card">
-          <div className="stat-card">
-            <span>Launch model</span>
-            <strong>Founder-led</strong>
-          </div>
-          <div className="stat-card">
-            <span>Initial region</span>
-            <strong>Bellingham / Whatcom County</strong>
-          </div>
-          <div className="stat-card">
-            <span>Phase 1 focus</span>
-            <strong>Trust-first booking + wellness support</strong>
+
+        <div className="hero-panel">
+          <div className="panel-badge">Founder-led launch</div>
+          <h2>Designed to earn trust before it tries to scale.</h2>
+          <p>
+            Walkocean starts intentionally: one founder, one local region, one premium standard for how companionship walks should feel.
+          </p>
+          <div className="proof-grid">
+            {proofPoints.map((item) => (
+              <article className="stat-card" key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="section-grid" id="how">
+      <section className="section-grid strip-section">
+        <div className="trust-strip">
+          <div>
+            <span className="eyebrow">Why this feels different</span>
+            <h2>A stronger local alternative to generic companion care marketplaces.</h2>
+          </div>
+          <p>
+            The first version of Walkocean is deliberately narrow: premium founder involvement, a clear safety frame, and a service experience built for trust, not volume.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-grid" id="who">
         <div className="section-heading">
-          <span className="eyebrow">How it works</span>
-          <h2>A calmer, safer way to make outdoor walking part of the week.</h2>
+          <span className="eyebrow">Who it serves</span>
+          <h2>Built for the people making thoughtful care decisions.</h2>
         </div>
         <div className="cards three-up">
-          {howItWorks.map((step) => (
-            <article className="card" key={step.title}>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
+          {audiences.map((item) => (
+            <article className="card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="section-grid alt">
+      <section className="section-grid alt" id="how">
         <div className="section-heading narrow">
-          <span className="eyebrow">Why families care</span>
-          <h2>Movement, companionship, routine, and more confidence.</h2>
+          <span className="eyebrow">How Phase 1 works</span>
+          <h2>Simple structure. Premium tone. Less friction for families.</h2>
           <p>
-            Walkocean is designed around gentle activity, time outdoors, and trusted companionship. The goal is not
-            hype or hard-to-defend health claims — it is a real local service families can feel good about using.
+            Every step is designed to reduce uncertainty: gather the right context, confirm fit carefully, and make the first walk feel considered instead of transactional.
           </p>
         </div>
-        <div className="cards two-up">
-          <article className="card feature-card">
-            <h3>For older adults</h3>
-            <p>Supportive walks that feel local, personal, and approachable.</p>
-          </article>
-          <article className="card feature-card">
-            <h3>For families</h3>
-            <p>More reassurance that a loved one has safe companionship and consistent outdoor movement.</p>
-          </article>
+        <div className="cards three-up">
+          {howItWorks.map((item) => (
+            <article className="card step-card" key={item.step}>
+              <span className="step-label">{item.step}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
-      <section className="section-grid">
-        <div className="section-heading">
-          <span className="eyebrow">Meet the founder</span>
-          <h2>Kelly Kenney is the first walker and the trust anchor for launch.</h2>
-        </div>
-        <article className="profile-card">
+      <section className="section-grid founder-section">
+        <div className="section-heading narrow">
+          <span className="eyebrow">Founder framing</span>
+          <h2>Kelly Kenney is the first face of the service — and that is a feature, not a placeholder.</h2>
           <p>
-            Walkocean starts with one trusted local operator, not a faceless marketplace. That tighter launch model
-            gives the brand room to refine safety, routing, preferences, and the family experience before expanding.
+            Walkocean is launching with direct founder involvement so the brand, experience, and safety model can be shaped in the real world before broader expansion. That creates a more premium and more accountable Phase 1 for early families.
+          </p>
+        </div>
+        <article className="profile-card founder-card">
+          <div className="founder-kicker">Phase 1 promise</div>
+          <p>
+            Instead of acting like a marketplace on day one, Walkocean is earning the right to become one. Founder-led delivery helps refine route planning, communication standards, and the overall family experience with much tighter quality control.
           </p>
         </article>
       </section>
 
-      <section className="section-grid alt">
+      <section className="section-grid alt" id="pricing">
+        <div className="section-heading narrow">
+          <span className="eyebrow">Pricing teaser</span>
+          <h2>Premium, but still approachable enough to try.</h2>
+          <p>
+            Walkocean will launch with clear private-walk pricing and early recurring options. The goal is to signal quality without making the first step feel heavy.
+          </p>
+        </div>
+        <div className="cards three-up">
+          {pricingTeasers.map((item) => (
+            <article className="card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-grid" id="trust">
         <div className="section-heading">
-          <span className="eyebrow">Safety & trust</span>
-          <h2>Built to feel dependable from the first booking.</h2>
+          <span className="eyebrow">Trust & safety</span>
+          <h2>Grounded claims, clear boundaries, and a more careful launch model.</h2>
         </div>
         <div className="cards two-up">
-          {trustPoints.map((item) => (
+          {trustDetails.map((item) => (
             <article className="card" key={item}>
               <p>{item}</p>
             </article>
@@ -145,31 +216,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-grid" id="book">
-        <div className="section-heading narrow">
-          <span className="eyebrow">Phase 1 roadmap</span>
-          <h2>Website first. Booking flow next. App experience right after.</h2>
-          <p>
-            The first release is a focused trust-first website with a clean booking funnel. From there, Walkocean can
-            expand into a customer app, family notifications, and a broader companion marketplace.
-          </p>
-        </div>
-        <div className="cards two-up">
-          <article className="card">
-            <h3>Payments</h3>
-            <p>PayPal for USD at launch, with crypto support planned for the payment roadmap.</p>
-          </article>
-          <article className="card">
-            <h3>Marketplace model</h3>
-            <p>Start with Kelly. Expand carefully into a local vetted network once the service model is proven.</p>
-          </article>
-        </div>
-      </section>
-
       <section className="section-grid alt">
         <div className="section-heading">
           <span className="eyebrow">FAQ</span>
-          <h2>Clear answers for an early-stage launch.</h2>
+          <h2>Answers for families evaluating an early-stage premium service.</h2>
         </div>
         <div className="faq-list">
           {faqs.map((faq) => (
@@ -181,11 +231,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="closing-cta">
+      <section className="closing-cta" id="interest">
         <span className="eyebrow">Walkocean Phase 1</span>
-        <h2>Ready to turn the repo into a real launch?</h2>
-        <p>Next up: live booking flow, pricing, founder profile media, and Vercel-connected production deployment.</p>
-        <a href="mailto:hello@walkocean.com" className="btn btn-primary">Contact Walkocean</a>
+        <h2>Be first to hear when founder-led bookings open.</h2>
+        <p>
+          Join the early interest list for launch pricing, first-availability updates, and a clearer look at how Walkocean will roll out across Whatcom County.
+        </p>
+        <div className="cta-row cta-row-centered">
+          <a href="mailto:hello@walkocean.com?subject=Walkocean%20Interest%20List" className="btn btn-primary">Email Walkocean</a>
+          <a href="#how" className="btn btn-secondary">Review the launch model</a>
+        </div>
       </section>
     </main>
   )

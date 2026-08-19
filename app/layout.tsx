@@ -3,13 +3,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://walkocean.com'),
-  title: 'Walkocean | Trusted coastal walking companionship for older adults',
+  title: 'Walkocean | Premium walking companionship for older adults',
   description:
-    'Walkocean helps older adults and families in Whatcom County book trusted coastal walking companionship with safety, consistency, and confidence.',
+    'Walkocean is a founder-led premium walking companionship service launching in Whatcom County for older adults and families seeking trusted outdoor routines.',
   openGraph: {
     title: 'Walkocean',
     description:
-      'Trusted coastal walking companionship for older adults and families in Whatcom County.',
+      'Founder-led premium walking companionship for older adults and families in Whatcom County.',
     url: 'https://walkocean.com',
     siteName: 'Walkocean',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Walkocean',
     description:
-      'Trusted coastal walking companionship for older adults and families in Whatcom County.',
+      'Founder-led premium walking companionship for older adults and families in Whatcom County.',
   },
 }
 
