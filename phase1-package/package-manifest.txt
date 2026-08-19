@@ -1,0 +1,11 @@
+Walkocean Phase 1 Package Manifest
+
+README.md
+founder-handoff.md
+mvp-feature-map.md
+../README.md
+../docs/project-brief.md
+../docs/decision-log.md
+../docs/launch-checklist.md
+../docs/site-and-app-strategy.md
+../docs/evidence-notes.md
