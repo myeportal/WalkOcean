@@ -1,4 +1,4 @@
-const heroChips = ['Founder-led launch', 'Local routes in Whatcom County', 'Companionship-first, non-medical support']
+const heroChips = ['Founder-led launch', 'Local routes in Whatcom County', 'Companionship-first support']
 
 const stats = [
   { value: 'Phase 1', label: 'Founder-led delivery' },
@@ -126,35 +126,46 @@ export default function HomePage() {
         <a href="#interest" className="nav-cta">Book interest</a>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-overlay" />
-        <div className="hero-copy">
-          <div className="pill-label">walkocean.com</div>
-          <h1>Coastal companionship walks for older adults who deserve a steadier routine outdoors.</h1>
-          <p className="hero-text">
-            Founder-led Walkocean is launching in Whatcom County with calm, private walks built for trust, consistency, and family confidence — without pretending to be clinical care.
-          </p>
+      <section className="hero-shell" id="top">
+        <div className="hero">
+          <div className="hero-bubble hero-bubble-left" />
+          <div className="hero-bubble hero-bubble-center" />
+          <div className="hero-bubble hero-bubble-right" />
+          <div className="hero-overlay" />
 
-          <div className="hero-actions">
-            <a href="#interest" className="btn btn-primary">Find a companion</a>
-            <a href="#how" className="btn btn-secondary">Become an early family</a>
-          </div>
+          <div className="hero-copy">
+            <div className="pill-label">walkocean.com</div>
+            <h1>
+              <span>Ocean-air walks,</span>
+              <span>thoughtfully matched —</span>
+              <span>for older adults who deserve</span>
+              <span>a steadier routine outdoors.</span>
+            </h1>
+            <p className="hero-text">
+              Founder-led Walkocean is launching in Whatcom County with calm, private walks built for trust, consistency, and family confidence — without pretending to be clinical care.
+            </p>
 
-          <div className="hero-chips" aria-label="Highlights">
-            {heroChips.map((chip) => (
-              <span key={chip}>{chip}</span>
-            ))}
+            <div className="hero-actions">
+              <a href="#interest" className="btn btn-primary">Find a companion</a>
+              <a href="#how" className="btn btn-secondary">Become an early family</a>
+            </div>
+
+            <div className="hero-chips" aria-label="Highlights">
+              {heroChips.map((chip) => (
+                <span key={chip}>{chip}</span>
+              ))}
+            </div>
           </div>
         </div>
-      </section>
 
-      <section className="stats-bar" aria-label="Walkocean launch highlights">
-        {stats.map((item) => (
-          <article key={item.label} className="stat-item">
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-          </article>
-        ))}
+        <section className="stats-bar" aria-label="Walkocean launch highlights">
+          {stats.map((item) => (
+            <article key={item.label} className="stat-item">
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </article>
+          ))}
+        </section>
       </section>
 
       <section className="section-block" id="families">
